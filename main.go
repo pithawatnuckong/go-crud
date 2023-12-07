@@ -23,7 +23,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	_ = db
 
 	/*
 		Initial Service
