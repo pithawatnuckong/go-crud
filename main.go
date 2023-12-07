@@ -41,6 +41,8 @@ func main() {
 	app.Get("/api/customers", custHandler.FindCustomer)
 	app.Get("/api/customers/:id", custHandler.FindCustomerById)
 	app.Post("/api/customers/add", custHandler.CreateCustomer)
+	app.Post("/api/customers/edit", custHandler.UpdateCustomer)
+	app.Post("/zpi/customers/delete", custHandler.DeleteCustomer)
 
 	err = app.Listen(":3000")
 	if err != nil {
